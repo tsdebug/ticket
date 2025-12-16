@@ -51,41 +51,58 @@ export const OTHER_CITIES = [
   "Varanasi", "Vijayawada", "Visakhapatnam"
 ];
 
-
-export const MOVIES_NOW_SHOWING = [
-  {
-    id: 1,
+// 1. The "Database" for the Booking Page
+export const MOVIE_DETAILS: Record<string, any> = {
+  "1": {
     title: "Avatar: Fire and Ash",
-    genre: ["Sci-Fi", "Action"],
-    language: "English",
-    rating: "UA",
-    img: "/Avatar.jpg",
+    bg: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&q=80&w=1200",
+    poster: "/Avatar.jpg",
+    genre: "Sci-Fi, Action",
+    duration: "3h 17m",
+    rating: "UA 16+",
+    language: "English, Hindi",
+    formats: ["IMAX 3D", "4DX", "3D"],
   },
-  {
-    id: 2,
+  "2": {
     title: "Pushpa 2: The Rule",
-    genre: ["Action", "Drama"],
-    language: "Telugu",
+    bg: "https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?auto=format&fit=crop&q=80&w=1200",
+    poster: "/Pushpa.jpg",
+    genre: "Action, Drama",
+    duration: "2h 45m",
     rating: "UA",
-    img: "/Pushpa.jpg",
+    language: "Telugu, Hindi, Tamil",
+    formats: ["2D", "IMAX"],
   },
-  {
-    id: 3,
+  "3": {
     title: "Sonic the Hedgehog 3",
-    genre: ["Animation", "Adventure"],
-    language: "English",
+    bg: "https://images.unsplash.com/photo-1612404730960-5c71578fcaef?auto=format&fit=crop&q=80&w=1200",
+    poster: "/Sonic.jpg",
+    genre: "Animation, Adventure",
+    duration: "1h 50m",
     rating: "U",
-    img: "/Sonic.jpg",
+    language: "English",
+    formats: ["2D", "3D"],
   },
-  {
-    id: 4,
+  "4": {
     title: "Mufasa: The Lion King",
-    genre: ["Adventure", "Drama"],
-    language: "English",
+    bg: "https://images.unsplash.com/photo-1547406822-19253c306d64?auto=format&fit=crop&q=80&w=1200",
+    poster: "/Mufasa.jpg",
+    genre: "Adventure, Drama",
+    duration: "2h 10m",
     rating: "U",
-    img: "/Mufasa.jpg",
+    language: "English, Hindi",
+    formats: ["2D", "3D", "IMAX"],
   },
+};
+
+// 2. Lists for the Home Page (using IDs that match the DB above)
+export const MOVIES_NOW_SHOWING = [
+  { id: 1, title: "Avatar: Fire and Ash", genre: ["Sci-Fi"], img: MOVIE_DETAILS["1"].poster, rating: "UA" },
+  { id: 2, title: "Pushpa 2", genre: ["Action"], img: MOVIE_DETAILS["2"].poster, rating: "UA" },
+  { id: 3, title: "Sonic 3", genre: ["Animation"], img: MOVIE_DETAILS["3"].poster, rating: "U" },
+  { id: 4, title: "Mufasa", genre: ["Adventure"], img: MOVIE_DETAILS["4"].poster, rating: "U" },
 ];
+
 
 export const MOVIES_COMING_SOON = [
   {
