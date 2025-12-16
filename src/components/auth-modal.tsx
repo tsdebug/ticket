@@ -13,11 +13,9 @@ export function AuthModal() {
           <User className="w-4 h-4" /> Login
         </Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px] p-0 bg-white border-none overflow-hidden">
-        {/* This Title is required for accessibility, 'sr-only' hides it visually */}
+      
+      <DialogContent className="sm:max-w-3xl max-h-[90vh] overflow-y-auto p-0 bg-white border-none block">
         <DialogTitle className="sr-only">Sign In</DialogTitle>
-        
-        {/* Your existing form */}
         <SignupForm /> 
       </DialogContent>
     </Dialog>
