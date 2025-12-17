@@ -42,9 +42,9 @@ export default function Home() {
         <div className="flex items-center gap-8">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-1">
-             <div className="bg-purple-600 text-white font-black text-2xl px-2 py-1 rounded-sm">P</div>
+             <div className="bg-purple-600 text-white font-black text-2xl px-2 py-1 rounded-sm">S</div>
              <span className="text-2xl font-bold tracking-tighter text-gray-900">
-                PRO<span className="text-purple-600">JECT</span>
+                Star<span className="text-purple-600">Book</span>
              </span>
           </Link>
           
