@@ -91,7 +91,7 @@ export default function Home() {
         {/* 2. Hero Banner */}
         <div className="relative w-full h-[300px] md:h-[450px] bg-black">
              <Image 
-                src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&q=80&w=1600" 
+                src="/AvatarH.jpg" 
                 alt="Banner"
                 fill
                 className="object-cover opacity-60"
